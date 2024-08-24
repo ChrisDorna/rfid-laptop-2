@@ -37,8 +37,8 @@ basic.showLeds(`
 basic.forever(function () {
     dataGelezen = MFRC522.read()
     serial.writeLine("ID  :" + ("" + MFRC522.getID()))
-    serial.writeLine("DATA:" + dataGelezen)
-    serial.writeLine("Lengte:" + dataGelezen.length)
+    serial.writeLine("DATA:" + MFRC522.read())
+    serial.writeLine("Lengte:" + MFRC522.read().length)
     if (MFRC522.getID() == 874964799707) {
         serial.writeLine("HIER")
         basic.showIcon(IconNames.Heart)
