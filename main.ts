@@ -1,22 +1,21 @@
 input.onButtonPressed(Button.A, function () {
-    serial.writeLine("aaaaa")
+    MFRC522.write("CoderDojo")
     basic.showLeds(`
-        . . . . .
         . # # # .
-        . # . # .
+        # . . . #
+        # . . . .
+        # . . . #
         . # # # .
-        . . . . .
         `)
 })
 input.onButtonPressed(Button.B, function () {
-    serial.writeLine("chris")
     MFRC522.write("dorna")
     basic.showLeds(`
-        . . . . .
-        . # # # .
-        . # # # .
-        . # # # .
-        . . . . .
+        # # # # .
+        . # . . #
+        . # . . #
+        . # . . #
+        # # # # .
         `)
 })
 let dataGelezen = ""
