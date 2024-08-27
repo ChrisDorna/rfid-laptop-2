@@ -9,7 +9,7 @@ input.onButtonPressed(Button.A, function () {
         `)
 })
 input.onButtonPressed(Button.B, function () {
-    MFRC522.write("dorna")
+    MFRC522.write("Dorna")
     basic.showLeds(`
         # # # # .
         . # . . #
@@ -25,7 +25,7 @@ basic.pause(200)
 motor.servo(motor.Servos.S8, 90)
 basic.pause(200)
 motor.servo(motor.Servos.S8, 0)
-serial.writeLine("gelukt")
+serial.writeLine("We zijn gestart")
 basic.showLeds(`
     . . . . .
     . . # . .
